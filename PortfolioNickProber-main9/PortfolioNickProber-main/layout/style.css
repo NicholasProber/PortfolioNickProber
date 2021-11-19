@@ -57,7 +57,7 @@ ul {
      border-radius: 4px;
      text-align: center;
      box-shadow: 2px 5px 15px 2px rgb(137, 170, 255);
-     margin: 6px 10px 6px 10px; 
+     margin: 5px 8px 5px 8px; 
 }
 a {
     text-align: center;
@@ -104,7 +104,7 @@ a {
     padding: 8px 26px 8px 26px;
 }
 h2 {
-    margin-top: 7%;
+    margin-top: 1.5%;
 }
 h3 {
     text-align: center;
@@ -182,10 +182,13 @@ img {
     display: flex;
     
     flex-direction: row;
-   flex-wrap: wrap;
+  
     margin-bottom: 20px;
     padding: 12px;
     margin-top: 20px;
+}
+.centerp {
+    margin: 0 auto;
 }
     .footerbottom-child {
         
@@ -202,7 +205,7 @@ img {
         
         
         flex-basis: 60%;
-        
+        align-self: flex-end;
         color: rgb(0, 0, 0);
        
         
@@ -210,29 +213,35 @@ img {
         font-weight: 700;
         font-size: 16px;
     }
-    .footer-bottom-p2 {
- 
-       
-    }
+    
     .footer-nav-container {
-        display: flex;
-        flex-direction: row;
-        padding: 8px;
+     
+        align-self: flex-end;
+        padding: 7px;
     }
     .footer-nav-items {
-        padding: 2px 1.5px 2px 1.5px;
+        display: none;
+        padding: 1px 2.2px 2px 2.2px;
         font-weight: bold;
         font-size: 12px;
-        flex-basis: 33.33%
+        flex-basis: 70.33%;
+       
+    }
+    .mobile-topofpage {
+      padding-left: 60%;
     }
  
 
 
 .footer-child {
+   
     color: grey;
-    margin: 25px 3px 15px 3px;
- padding: 3px 8px 3px 8px;
-    font-size: 22px;
+    margin: 8px 3px 8px 3px;
+ padding: 1px 3px 1px 3px;
+    font-size: 18px;
+    max-height:100px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 li {
     text-decoration: none;
@@ -269,6 +278,7 @@ a:active { text-decoration: none; }
         align-items: center;
         max-width: 70%;   
     }
+  
     .navitems  {
         margin: 0 auto;
         font-size: 17px;
@@ -280,6 +290,9 @@ a:active { text-decoration: none; }
         align-items: center;
         background-color: rgb(210, 225, 255);
         order: 1;    
+    }
+    .myname {
+        
     }
     a {
         padding: 3px 3px 3px 3px;
@@ -297,7 +310,7 @@ a:active { text-decoration: none; }
     }
     .child {
         
-        padding: 8px 7 8px 7;
+        padding: 8px 7px 8px 7px;
         max-width: 40%;
       
        
@@ -316,6 +329,7 @@ a:active { text-decoration: none; }
     }
 
     .child2{
+        
         flex-grow: 0;
         flex-wrap: wrap;
         margin: 0 auto;
@@ -343,6 +357,50 @@ a:active { text-decoration: none; }
         margin: 0 auto;
         
 }
+.footer-nav-container {
+    justify-content: end;
+}
+.footerbottom-child {
+        
+        
+    flex-basis: 40%;
+    
+    color: rgb(0, 0, 0);
+   
+
+    font-weight: 700;
+    font-size: 16px;
+}
+.footerbottom-child2 {
+    
+    
+    flex-basis: 60%;
+    align-self: flex-end;
+    color: rgb(0, 0, 0);
+   
+    
+    
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer-nav-container {
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+}
+.footer-nav-items {
+    display: flex;
+    padding: 1px 2.2px 2px 2.2px;
+    font-weight: bold;
+    font-size: 12px;
+    flex-basis: 70.33%;
+   
+}
+.mobile-topofpage {
+    display: none;
+  }
+
 }
 @media screen and (min-width: 1024px){
     h1 {
@@ -381,9 +439,10 @@ margin-left: 3%;
       margin: 0;
     }
     .myname {
-        margin-top: 1.5%;
+        margin-top: 94px;
+
         
-        margin-left: 3.75%;
+        margin-left: 1.75%;
         font-size: 18px;
         flex-grow: .5;
    
@@ -392,18 +451,18 @@ margin-left: 3%;
     .navitems {
         flex-grow: 0;
         margin-top: 25%;
-        margin-left: 3%;
-        margin-left: 3%;
+        margin-left: .5%;
+        margin-right: 2%;
+       
         
     }
     .navcontainer {
         align-items: flex-start;
+        padding: 0;
+        margin: 0px 0px 0px 15px;
 
     }
-    
-   .navitems {
-
-   }
+  
    
    .desktop-parent {
        display: flex;
@@ -445,6 +504,8 @@ margin-left: 3%;
    h2 {
        margin-top: 18px;
    }
-
+.footer-nav-container {
+    justify-content: end;
+}
 }
 
