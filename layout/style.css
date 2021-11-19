@@ -182,7 +182,7 @@ img {
     display: flex;
     
     flex-direction: row;
-   flex-wrap: wrap;
+  
     margin-bottom: 20px;
     padding: 12px;
     margin-top: 20px;
@@ -215,16 +215,20 @@ img {
     }
     
     .footer-nav-container {
-        display: flex;
-        flex-direction: row;
+     
+        align-self: flex-end;
         padding: 7px;
     }
     .footer-nav-items {
+        display: none;
         padding: 1px 2.2px 2px 2.2px;
         font-weight: bold;
         font-size: 12px;
         flex-basis: 70.33%;
        
+    }
+    .mobile-topofpage {
+      padding-left: 60%;
     }
  
 
@@ -287,6 +291,9 @@ a:active { text-decoration: none; }
         background-color: rgb(210, 225, 255);
         order: 1;    
     }
+    .myname {
+        
+    }
     a {
         padding: 3px 3px 3px 3px;
     }
@@ -303,7 +310,7 @@ a:active { text-decoration: none; }
     }
     .child {
         
-        padding: 8px 7 8px 7;
+        padding: 8px 7px 8px 7px;
         max-width: 40%;
       
        
@@ -322,6 +329,7 @@ a:active { text-decoration: none; }
     }
 
     .child2{
+        
         flex-grow: 0;
         flex-wrap: wrap;
         margin: 0 auto;
@@ -352,6 +360,46 @@ a:active { text-decoration: none; }
 .footer-nav-container {
     justify-content: end;
 }
+.footerbottom-child {
+        
+        
+    flex-basis: 40%;
+    
+    color: rgb(0, 0, 0);
+   
+
+    font-weight: 700;
+    font-size: 16px;
+}
+.footerbottom-child2 {
+    
+    
+    flex-basis: 60%;
+    align-self: flex-end;
+    color: rgb(0, 0, 0);
+   
+    
+    
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer-nav-container {
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+}
+.footer-nav-items {
+    display: flex;
+    padding: 1px 2.2px 2px 2.2px;
+    font-weight: bold;
+    font-size: 12px;
+    flex-basis: 70.33%;
+   
+}
+.mobile-topofpage {
+    display: none;
+  }
 
 }
 @media screen and (min-width: 1024px){
@@ -391,9 +439,10 @@ margin-left: 3%;
       margin: 0;
     }
     .myname {
-        margin-top: 1.5%;
+        margin-top: 94px;
+
         
-        margin-left: 3.75%;
+        margin-left: 1.75%;
         font-size: 18px;
         flex-grow: .5;
    
@@ -402,7 +451,7 @@ margin-left: 3%;
     .navitems {
         flex-grow: 0;
         margin-top: 25%;
-        margin-left: 2%;
+        margin-left: .5%;
         margin-right: 2%;
        
         
